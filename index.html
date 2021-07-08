@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오늘 명언</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="background">
+
+        <!-- LOGO -->
+        <header>
+            <span class="logo">오늘<br/>명언</span>
+            <span class="introduce">?</span>
+        </header>
+        
+        <div class="container">
+            <!-- QUOTE -->
+            <div class="bg">
+                <div class="quote"></div>
+                <button class="create-widget">Create Widget</button>
+            </div>
+            
+
+            <!-- WIDGET -->
+            <div class="widget">
+                <div class="setting">
+                    <div class="wrapper-setting">
+                        <h2>STYLE</h2>
+                        <div class="set-bg">
+                            <h3>-Background Color</h3>
+                            <div class="controls_colors bgColors" >
+                                <div class="controls_color jsColor" style="background:
+                                #FFFFFF;"></div>
+                                <div class="controls_color jsColor" style="background: #EBECED;"></div>
+                                <div class="controls_color jsColor" style="background: #E9E5E3;"></div>
+                                <div class="controls_color jsColor" style="background: #FAEBDD;"></div>
+                                <div class="controls_color jsColor" style="background: #FBF3DB;"></div>
+                                <div class="controls_color jsColor" style="background: #DDEDEA;"></div>
+                                <div class="controls_color jsColor" style="background: #DDEBF1;"></div>
+                                <div class="controls_color jsColor" style="background: #EAE4F2;"></div>
+                                <div class="controls_color jsColor" style="background: #F4DFEB;"></div>
+                                <div class="controls_color jsColor" style="background: #FBE4E4;"></div>
+                            </div>
+                        </div>
+                        <div class="set-fontColor">
+                            <h3>-Font Color</h3>
+                            <div class="controls_colors fontColors">
+                        
+                                <div class="controls_color jsColor" style="background:
+                                #37352F;"></div>
+                                <div class="controls_color jsColor" style="background:
+                                #9B9A97;"></div>
+                                <div class="controls_color jsColor" style="background: #64473A;"></div>
+                                <div class="controls_color jsColor" style="background: #D9730D;"></div>
+                                <div class="controls_color jsColor" style="background: #DFAB01;"></div>
+                                <div class="controls_color jsColor" style="background: #0F7B6C;"></div>
+                                <div class="controls_color jsColor" style="background: #0B6E99;"></div>
+                                <div class="controls_color jsColor" style="background: #6940A5;"></div>
+                                <div class="controls_color jsColor" style="background: #AD1A72;"></div>
+                                <div class="controls_color jsColor" style="background: #E03E3E;"></div>
+                            </div>
+                        </div>
+                        <button class="get-code">Get Code</button>
+                    </div>
+                </div>
+                <div class="widget-display">
+                    <button class="close">
+                        <i class="fa fa-times-circle-o" aria-hidden="true"></i>
+                    </button>
+                    <div class="quote-bg">
+                        <div class="widget-quote"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODAL -->
+            <div class="modal">
+                <div class="modal-bg"></div>
+                <div class="close">
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="wrapper">
+                    <div class="title">Get Code</div>
+                    <div class="contents">
+                        <h3>Copy the Following Code</h3>
+                        <textarea></textarea>
+                        <div class="button">
+                            <button class="copy"> Copy to Clipboard</button>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="toast">
+                <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+            </div>
+        </div>
+        
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>

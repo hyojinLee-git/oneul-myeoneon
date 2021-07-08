@@ -1,0 +1,332 @@
+button {
+  outline: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.background {
+  /* background: url('https://source.unsplash.com/random/1536*722/?nature'); */
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+/*          HEADER          */
+header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+}
+header .logo {
+  color: white;
+  border: 5px solid white;
+  margin: 2rem;
+  padding: 0.5rem;
+  font-size: 30px;
+}
+header .introduce {
+  color: white;
+  border: white 2px solid;
+  border-radius: 50%;
+  margin: 2rem;
+  width: 16px;
+  font-size: 16px;
+  background-color: lightgray;
+  cursor: pointer;
+  text-align: center;
+}
+
+/*        MAIN        */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+}
+.container .bg {
+  width: 65%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 3rem;
+  border-radius: 10px;
+  position: relative;
+}
+.container .bg:hover .create-widget {
+  display: block;
+}
+.quote {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+.container .create-widget {
+  color: white;
+  font-size: 1rem;
+  margin-left: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 1rem;
+  display: none;
+  padding: 0.3rem;
+  border-radius: 5px;
+}
+
+.container .create-widget:hover {
+  /* background-color: rgba(235, 235, 235, 0.5); */
+  border-bottom: 1px solid;
+  border-right: 1px solid;
+}
+
+/*          WIDGET          */
+/*    setting     */
+.container .widget {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80%;
+  background-color: white;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+.container .widget .setting {
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: #f5f5f5;
+  width: 40%;
+  border-top-left-radius: 50px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; */
+}
+.container .widget .setting .wrapper-setting {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* border: 1px solid red; */
+  height: 70%;
+  transform: translate(-50%, -50%);
+}
+
+.container .widget .setting .wrapper-setting h2 {
+  font-size: 30px;
+  margin-bottom: 5rem;
+  font-weight: bold;
+}
+.container .widget .setting .wrapper-setting .set-bg,
+.set-fontColor {
+  margin-left: 3rem;
+}
+.container .widget .setting .wrapper-setting h3 {
+  font-size: 1rem;
+}
+
+.controls_colors {
+  display: flex;
+  margin: 10px;
+}
+
+.controls_colors .controls_color {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  margin-right: 1px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0 0.08);
+}
+.container .widget .setting .get-code {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 1rem;
+  background-color: #e6e6e6;
+  padding: 0.3rem 0.8rem;
+  border-radius: 5px;
+}
+.container .widget .setting .get-code:hover {
+  border-bottom: solid 1px;
+  border-right: 1px solid;
+  box-sizing: border-box;
+}
+.container .widget .setting .get-code:active {
+  border: none;
+}
+
+/*    display     */
+.container .widget .widget-display {
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: white;
+  width: 60%;
+  border-top-right-radius: 50px;
+}
+.container .widget .widget-display .quote-bg {
+  background-color: #f5f5f5;
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+.container .widget .widget-display .close {
+  position: absolute;
+  font-size: 1.5rem;
+  top: 0;
+  right: 0;
+  margin: 1.5rem;
+}
+
+/*            MODAL           */
+.modal {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.modal-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+}
+.modal .close {
+  width: 2rem;
+  position: absolute;
+  top: 25%;
+  left: 65%;
+  cursor: pointer;
+  margin-left: 2px;
+}
+.modal .close span {
+  display: inline-block;
+  height: 4px;
+  width: 100%;
+  background-color: white;
+  border-radius: 5px;
+}
+.modal .close span:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.modal .close span:nth-child(2) {
+  -webkit-transform: translateY(-16px) rotate(-45deg);
+  transform: translateY(-16px) rotate(-45deg);
+}
+.wrapper {
+  background-color: white;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  height: 50%;
+}
+
+.wrapper .title {
+  font-size: 2rem;
+  background-color: rgb(255, 206, 189);
+  height: 20%;
+  display: flex;
+  align-items: center;
+  border-radius: 5px 5px 0 0;
+  padding-left: 1rem;
+  font-weight: bold;
+}
+.wrapper .contents {
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; */
+  padding: 1.2rem;
+  height: 80%;
+}
+.wrapper .contents h3 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+.wrapper textarea {
+  width: 95%;
+  height: 60%;
+  border: none;
+  border-bottom: 1px solid gray;
+  outline: none;
+  font-size: 1rem;
+  line-height: 1.2rem;
+}
+/* .wrapper .button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 1rem;
+}
+.wrapper .button button {
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-right: 5px;
+}
+.wrapper .button button:hover {
+  background-color: lightgray;
+}
+.wrapper .button .copy {
+  color: green;
+} */
+.wrapper .copy {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 1rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  color: green;
+  font-size: 1rem;
+}
+.wrapper .copy:hover {
+  background-color: lightgray;
+}
+
+/*      TOAST       */
+.toast {
+  display: none;
+  color: green;
+  font-size: 10rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
