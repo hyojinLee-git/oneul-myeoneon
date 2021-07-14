@@ -35,7 +35,7 @@ function getQuote() {
       quote.innerHTML = `${res.message} -${res.author}`;
       widgetQuote.innerText = quote.innerHTML;
     })
-    .catch(error => alert('통신에러!'));
+    .catch(error => console.log('통신에러'));
 }
 getQuote();
 
